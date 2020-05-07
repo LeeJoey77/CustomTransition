@@ -18,6 +18,7 @@
 		6DB4672C2463A534000D636E /* PresentBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4672B2463A534000D636E /* PresentBottom.swift */; };
 		6DB4672E2463A872000D636E /* FirstBottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4672D2463A872000D636E /* FirstBottomVC.swift */; };
 		6DB467302463AAC5000D636E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4672F2463AAC5000D636E /* StartViewController.swift */; };
+		6DB467322463E7D4000D636E /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB467312463E7D4000D636E /* TransitionViewController.swift */; };
 		6DD9EA2B244FDF9F00A4A40B /* JLTransitionToController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9EA2A244FDF9F00A4A40B /* JLTransitionToController.swift */; };
 		6DD9EA2D244FDFB600A4A40B /* JLTransitionFromController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9EA2C244FDFB600A4A40B /* JLTransitionFromController.swift */; };
 		6DD9EA2F244FEB0700A4A40B /* HalfWaySpringAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9EA2E244FEB0700A4A40B /* HalfWaySpringAnimator.swift */; };
@@ -71,6 +72,7 @@
 		6DB4672B2463A534000D636E /* PresentBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentBottom.swift; sourceTree = "<group>"; };
 		6DB4672D2463A872000D636E /* FirstBottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBottomVC.swift; sourceTree = "<group>"; };
 		6DB4672F2463AAC5000D636E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		6DB467312463E7D4000D636E /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		6DD9EA2A244FDF9F00A4A40B /* JLTransitionToController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLTransitionToController.swift; sourceTree = "<group>"; };
 		6DD9EA2C244FDFB600A4A40B /* JLTransitionFromController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLTransitionFromController.swift; sourceTree = "<group>"; };
 		6DD9EA2E244FEB0700A4A40B /* HalfWaySpringAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfWaySpringAnimator.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				6DFBA4A924571B3500118E47 /* Custom Presentation */,
 				6DFBA4A6245719D100118E47 /* Interactivity */,
 				6DFBA4A5245719C000118E47 /* Animator */,
+				6DB467312463E7D4000D636E /* TransitionViewController.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				6DE6B184241B23CC004997B4 /* ViewController.swift in Sources */,
 				6DD9EA2D244FDFB600A4A40B /* JLTransitionFromController.swift in Sources */,
 				6DE6B180241B23CC004997B4 /* AppDelegate.swift in Sources */,
+				6DB467322463E7D4000D636E /* TransitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

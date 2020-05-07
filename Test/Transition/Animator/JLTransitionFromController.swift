@@ -16,11 +16,6 @@ class JLTransitionFromController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .cyan
-        //modalPresentationStyle,可以自定义动画效果的只有两种：FullScreen和Custom
-        toVC.modalPresentationStyle = .custom
-//        toVC.modalPresentationStyle = .fullScreen
-        toVC.transitioningDelegate = self
-
         
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
         button.frame.origin.x = (self.view.bounds.width - 150) / 2
@@ -32,6 +27,10 @@ class JLTransitionFromController: UIViewController {
     }
     
     @objc func handleClickBtnAction() {
+        //modalPresentationStyle,可以自定义动画效果的只有两种：FullScreen和Custom
+        toVC.modalPresentationStyle = .custom
+        //        toVC.modalPresentationStyle = .fullScreen
+        toVC.transitioningDelegate = self
         self.present(toVC, animated: true, completion: nil)
     }
     
@@ -48,7 +47,6 @@ extension JLTransitionFromController: UIViewControllerTransitioningDelegate {
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return CrossDissolveAnimator()
-
     }
 }
 

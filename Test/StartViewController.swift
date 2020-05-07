@@ -16,18 +16,10 @@ class StartViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func clickButton(_ sender: UIButton) {
-        
-        let vc = FirstBottomVC()
-        vc.modalPresentationStyle = .custom
-        let presentation = PresentBottom(presentedViewController: vc, presenting: self)
-        vc.transitioningDelegate = presentation
-        self.present(vc, animated: true, completion: nil)
-    }
-    
-    @IBAction func handleCustomPresentationBtn(_ sender: Any) {
-        if let vc = storyboard?.instantiateViewController(identifier: "CustomPresentationFirstController") as? CustomPresentationFirstController {
-            self.present(vc, animated: true, completion: nil)
+    @IBAction func clickTransitionBtn(_ sender: UIButton) {
+        if let vc = storyboard?.instantiateViewController(identifier: "TransitionViewController") as? TransitionViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
 }

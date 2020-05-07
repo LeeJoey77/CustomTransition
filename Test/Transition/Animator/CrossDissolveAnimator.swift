@@ -36,7 +36,7 @@ class CrossDissolveAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         fromView?.alpha = 1.0
         toView?.alpha = 0.0
         let containerView = transitionContext.containerView
-        // .fullScreen 会移除 presentingVC 的 view
+        //
         if (fromVC!.modalPresentationStyle == .fullScreen) || (fromVC!.navigationController?.delegate != nil) {
             containerView.addSubview(toView!)
         }
